@@ -1,0 +1,25 @@
+# Toto je motd servera.
+Server-MOTD:
+  Linka-1: "&5&lEND&f&lCRAFT &7- &cDeveloper Server &f1.19.4"
+  Linka-2: "&aNovinky &7> Nový system"
+
+# Motd hráča, keď sa pripojí.
+Pridat-sa-do-hry-MOTD:
+  Povolene: true
+  # Skontrolujte, či fórum neobsahuje zástupné symboly.
+  # Podporované pre zástupné symboly PlaceholderAPI.
+  Spravy:
+    - '&eVitajte na serveri.'
+
+# Ikona servera.
+Vlastna-ikona-servera:
+  # Nastavenie na true načíta obrázok z priečinka motd.
+  Povolene: false
+  # Uistite sa, že je to 64 x 64 pixelov vo formáte png.
+  Obrazok: server-icon.png
+
+
+# Maximálny počet hráčov na serveri.
+Server-Maximalny-hraci:
+  Upravit: true
+  Maximalny-pocet-hracov: 200

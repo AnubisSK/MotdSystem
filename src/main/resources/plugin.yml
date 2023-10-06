@@ -1,0 +1,24 @@
+name: MotdSystem
+version: '${project.version}'
+main: sk.anubissvk.motdsystem.Motd
+api-version: 1.19
+load: STARTUP
+softdepend: [PlaceholderAPI]
+description: Plugin na úpravu motd pomocou jedného príkazu
+author: AnubisSVK
+commands:
+  motd:
+    description: Skontrolujte svoje MOTD v hre a MOTD servera.
+    usage: /<command>
+  nastavservermotd:
+    description: Nastavte MOTD servera.
+    usage: /<command>
+permissions:
+  motd.*:
+    children:
+      motd.nastavit:
+        description: Umožňuje hráčovi nastaviť server MOTD.
+      motd.skontrolovat:
+        description: Umožňuje hráčovi skontrolovať MOTD v hre a MOTD servera.
+      motd.znovunacitat:
+        description: Umožňuje hráčovi znovu načítať konfigurácie.
